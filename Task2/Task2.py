@@ -49,5 +49,10 @@ def analyze_log(file_path):
         print(f"Shortest Visit: {shortest_visit // 60} Minutes, {shortest_visit % 60} Minutes")
 
     except FileNotFoundError:
-        # Commit: Handle File Not Found Error
+        # Handle File Not Found Error
         print(f'Cannot open "{file_path}"!')
+
+# Commit: Command Line Argument Check
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Missing command line argument!")

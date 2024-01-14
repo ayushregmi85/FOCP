@@ -47,3 +47,11 @@ def main():
     is_tuesday = input("Is it Tuesday? (y/n) ").lower() == "y"
 
     is_app_order = input("Did the customer use the app? (y/n) ").lower() == "y"
+
+    # Calculate and display total price if input is valid
+    total_price = calculate_total_price(is_tuesday, num_pizzas, is_delivery, is_app_order)
+    if total_price is not None:
+        print(f"\nTotal Price: £{total_price}.")
+
+if __name__ == "__main__":
+    main()

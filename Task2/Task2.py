@@ -48,4 +48,6 @@ def analyze_log(file_path):
         print(f"Longest Visit: {longest_visit // 60} Minutes, {longest_visit % 60} Minutes")
         print(f"Shortest Visit: {shortest_visit // 60} Minutes, {shortest_visit % 60} Minutes")
 
-
+    except FileNotFoundError:
+        # Commit: Handle File Not Found Error
+        print(f'Cannot open "{file_path}"!')

@@ -57,7 +57,7 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Missing command line argument!")
     else:
-        # Commit: Extract File Path from Command Line Argument
+        # Extract File Path from Command Line Argument
         file_path = sys.argv[1]
-        # Commit: Perform Log Analysis
+        # Perform Log Analysis
         analyze_log(file_path)
